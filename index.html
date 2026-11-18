@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PANDE EXIM | Business CRM</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div id="loginView" class="login-wrap"><form id="loginForm" class="login-card"><div class="brand-mark">PX</div><h1>PANDE EXIM</h1><p>Business CRM & Export Management</p><label>Email<input id="loginEmail" type="email" required autocomplete="username"></label><label>Password<input id="loginPassword" type="password" required autocomplete="current-password"></label><button class="primary">Sign in</button><p id="loginError" class="error"></p></form></div>
+<div id="appView" class="app hidden">
+<aside class="sidebar"><div class="brand"><span class="brand-mark small">PX</span><div><b>PANDE EXIM</b><small>BUSINESS CRM</small></div></div>
+<nav id="nav">
+<button data-page="dashboard" class="active">▦ Dashboard</button><button data-page="leads">◎ Leads</button><button data-page="customers">♙ Customers</button><button data-page="suppliers">▤ Suppliers</button><button data-page="products">◇ Products</button><button data-page="quotations">▧ Quotations</button><button data-page="orders">▣ Sales Orders</button><button data-page="shipments">⇄ Export Shipments</button><button data-page="payments">₹ Payments</button><button data-page="activities">◷ Activities</button></nav>
+<div class="side-bottom"><small id="userLabel"></small><button id="logoutBtn" class="ghost">Sign out</button></div></aside>
+<main class="main"><header class="topbar"><div><small>BUSINESS MANAGEMENT</small><h2 id="pageTitle">Dashboard</h2></div><div class="top-actions"><span id="today"></span><button id="addBtn" class="primary">+ Add New</button></div></header>
+<section id="content"></section></main></div>
+<div id="modal" class="modal hidden"><div class="modal-card"><div class="modal-head"><h3 id="modalTitle">Add record</h3><button id="closeModal" class="icon-btn">✕</button></div><form id="recordForm"><div id="formFields" class="form-grid"></div><div class="modal-actions"><button type="button" id="cancelModal" class="ghost">Cancel</button><button class="primary">Save record</button></div></form></div></div>
+<div id="toast" class="toast"></div><script src="js/config.js"></script><script src="js/app.js"></script></body></html>
